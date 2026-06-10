@@ -99,7 +99,7 @@ public class Setting {
 
     private String getConfigDir() {
         AppDirs appDirs = AppDirsFactory.getInstance();
-        return appDirs.getUserConfigDir("runawfe-notifier", null, null);
+        return appDirs.getUserConfigDir("runawfe-notifier-free", null, null);
     }
 
     private String getPropertiesFilePath() {
