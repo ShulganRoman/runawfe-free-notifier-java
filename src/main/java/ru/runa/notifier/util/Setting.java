@@ -99,7 +99,7 @@ public class Setting {
 
     private String getConfigDir() {
         AppDirs appDirs = AppDirsFactory.getInstance();
-        return appDirs.getUserConfigDir("runawfe-notifier-free", null, null);
+        return appDirs.getUserConfigDir("runawfe-notifier-" + getEdition(), null, null);
     }
 
     private String getPropertiesFilePath() {
@@ -211,6 +211,10 @@ public class Setting {
 
     public Boolean isUseExternalBrowser() {
         return useExternalBrowser;
+    }
+
+    public String getEdition() {
+        return "free";
     }
 
     private class ConnectionHelper {
