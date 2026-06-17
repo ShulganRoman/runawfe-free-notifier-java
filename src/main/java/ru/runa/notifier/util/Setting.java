@@ -214,7 +214,7 @@ public class Setting {
     }
 
     public String getEdition() {
-        return "free";
+        return "Free";
     }
 
     private class ConnectionHelper {
